@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono';
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 80px;background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #1a8f49;
+    color: #fff;
+}
+
+.main-banner {
+    background-image: url(../img/peakpx\ \(3\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1, 
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+    font-size: 46px;
+}
+
+.main-banner p {
+    font-size: 22px;
+}
+
+ /* Services */
+
+ .services-container {
+    padding: 10rem 0;
+ }
+
+ .services-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .services-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+ }
+
+ .fas {
+    font-size: 30px;
+    margin-bottom: 15px;
+ }
+
+ .fa-shield-alt {
+    color: #2cc76a;
+ }
+
+ .fa-rocket {
+    color: #560e64;
+ }
+
+ .fa-comments {
+    color: #ef8f29;
+ }
+
+ .services-container h3 {
+    margin-bottom: 25px;
+ }
+
+ .services-container p {
+    line-height: 24px;
+ }
+
+ /* Pricing and plans */
+
+ .pricing-container {
+    text-align: center;
+ }
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 1.5rem;
+    background-color: #fff;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid #5356df;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ .plan ul:hover {
+    transform: translateY(-12px);
+}
+
+.plan-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #080bbd;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+    color: #0d3570;
+}
+
+.plan li {
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.plan-btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 3rem;
+    margin-top: 30px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.plan-btn:hover {
+    background-color: #18a551;
+}
+
+/* Search Section */
+
+.searchdomain-container {
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.searchdomain-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"] {
+    width: 60%;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.searchdomain-container input[type="submit"] {
+    background-color: #18a551;
+    color: #fff;
+    width: 15%;
+    padding: 15px 20px;
+    font-size: 17px;
+    margin-top: 15px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.searchdomain-container input[type="submit"]:hover {
+    background-color: #1a8f49;
+}
+
+/* Contact Form */
+
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 34px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
