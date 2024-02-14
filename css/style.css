@@ -5,13 +5,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-btn-color: #2cc76a;
+}
+
 h1, h2, h3 {
     color: #333;
 }
 
 .navbar-container {
     width: 100%;
-    height: 80px;background-color: #232a31;
+    height: 80px;
+    background-color: #232a31;
     padding: 0 2rem;
 }
 
@@ -52,7 +57,7 @@ nav {
 
 .default-btn {
     padding: 15px 20px;
-    background-color: #2cc76a;
+    background-color: var(--bg-btn-color);
     border-radius: 5px;
 }
 
@@ -109,7 +114,7 @@ nav {
  }
 
  .fa-shield-alt {
-    color: #2cc76a;
+    color: var(--bg-btn-color);
  }
 
  .fa-rocket {
@@ -149,7 +154,7 @@ nav {
     margin-bottom: 2rem;
     border-radius: 5px;
     border: 1px solid #5356df;
-    transition: 0.5s;
+    transition: 0.7s;
     cursor: pointer;
 }
 
@@ -181,9 +186,9 @@ nav {
     font-weight: bold;
     height: 3rem;
     margin-top: 30px;
-    background-color: #2cc76a;
+    background-color: var(--bg-btn-color);
     border-radius: 5px;
-    transition: 1s;
+    transition: .7s;
 }
 
 .plan-btn:hover {
@@ -224,7 +229,7 @@ nav {
 }
 
 .searchdomain-container input[type="submit"] {
-    background-color: #18a551;
+    background-color: var(--bg-btn-color);
     color: #fff;
     width: 15%;
     padding: 15px 20px;
@@ -252,4 +257,33 @@ nav {
 .contact-container p {
     font-size: 18px;
     margin-bottom: 40px;
+}
+
+.contact-container input, 
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 430px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--bg-btn-color);
+    cursor: pointer;
+    transition: .7s;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: #18a551;
 }
